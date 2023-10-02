@@ -16,6 +16,7 @@
 - Bugfix: Fixed input in reply thread popup losing focus when dragging. (#4815)
 - Bugfix: Fixed the Quick Switcher (CTRL+K) from sometimes showing up on the wrong window. (#4819)
 - Bugfix: Fixed too much text being copied when copying chat messages. (#4812, #4830, #4839)
+- Bugfix: Fixed empty page being added when showing out of bounds dialog. (#4849)
 - Dev: Fixed UTF16 encoding of `modes` file for the installer. (#4791)
 - Dev: Temporarily disable High DPI scaling on Qt6 builds on Windows. (#4767)
 - Dev: Tests now run on Ubuntu 22.04 instead of 20.04 to loosen C++ restrictions in tests. (#4774)
@@ -26,8 +27,14 @@
 - Dev: Refactor `Image` & Image's `Frames`. (#4773)
 - Dev: Add `WindowManager::getLastSelectedWindow()` to replace `getMainWindow()`. (#4816)
 - Dev: Clarify signal connection lifetimes where applicable. (#4818)
-- Dev: Laid the groundwork for advanced input completion strategies. (#4639, #4846)
+- Dev: Laid the groundwork for advanced input completion strategies. (#4639, #4846, #4853)
 - Dev: Fixed flickering when running with Direct2D on Windows. (#4851)
+
+## 2.4.6
+
+- Minor: Migrate to the new Get Channel Followers Helix endpoint, fixing follower count not showing up in usercards. (#4809)
+- Bugfix: Update Qt version, fixing a security issue with webp loading (see https://www.qt.io/blog/two-qt-security-advisorys-gdi-font-engine-webp-image-format) (#4843)
+- Dev: Temporarily disable High DPI scaling on Qt6 builds on Windows. (#4767)
 
 ## 2.4.5
 
